@@ -62,7 +62,7 @@ def parse_args():
     args.pnhid = [int(n) for n in args.pnhid.split('+')]
     
     import os
-    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+    #os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu) # Commented by Nate due error on CUDA
 
     return args
 
